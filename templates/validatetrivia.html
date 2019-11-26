@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>You are...</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+</head>
+
+<body>
+{% if query == False %}
+
+        <h2> Your answer is WRONG!</h2>
+        <img src="https://media1.tenor.com/images/17a17ae6b93faf667b39af6d8fe34d68/tenor.gif?itemid=14359850" class="center">
+{% endif %}
+     
+
+{% if query == True %}
+
+        <h2> Your answer is CORRECT!</h2>
+        <img src="https://media.giphy.com/media/oTHtT6l0oTR0A/200.gif"class="center">
+    </body>
+{% endif %}
+
+
+
+
+
+</html>

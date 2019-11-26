@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Trivia Challenge</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+</head>
+
+<body>
+		<h2> Welcome to Trivia Challenge! </h2>
+        <h2> Player one, select a category or pick random </h2>
+            
+    
+     <form method="POST" action="http://127.0.0.1:5000/categories/">
+        <input type="submit" name="category" value="Sports" >
+    	</form>
+  	<br>
+     <form method="POST" action="http://127.0.0.1:5000/categories/">
+        <input type="submit" name="category" value="Wine" >
+    	</form>
+    <br>
+     <form method="POST" action="http://127.0.0.1:5000/categories/">
+        <input type="submit" name="category" value="Science" >
+    	</form>
+	<br>
+     <form method="POST" action="http://127.0.0.1:5000/categories/">
+        <input type="submit" name="category" value="Animals" >
+        </form>
+    <br>
+     <form method="POST" action="http://127.0.0.1:5000/categories/">
+        <input type="submit" name="category" value="Dogs" >
+        </form>
+          <br>
+     <form method="POST" action="http://127.0.0.1:5000/categories/">
+        <input type="submit" name="category" value="Astronomy" >
+        </form>
+          <br>
+     <form method="POST" action="http://127.0.0.1:5000/categories/">
+        <input type="submit" name="category" value="Fashion" >
+        </form>
+        <br>
+     <form method="POST" action="http://127.0.0.1:5000/categories/">
+        <input type="submit" name="category" value="Beer" >
+        </form>
+    <br>
+     <form method="POST" action="http://127.0.0.1:5000/random/">
+        <input type="submit" name="category" value="Random" >
+    	</form>
+  
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Question Time</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+</head>
+
+<body>
+        <h2> Your question is:  </h2>
+        <h2> {{ trivia_question }} ? </h2>
+        <h2> Type in your answer. </h2>
+        <h2>You only have one attempt!</h2>
+            <form method="POST" action="http://127.0.0.1:5000/validate/">
+        <input type="text" name="query" value="{{ answer }}" >
+        <input button type ="submit" />
+    </form>
+  
+   
+</body>
+
+</html>
+
+ 
